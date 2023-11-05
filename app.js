@@ -11,10 +11,7 @@ const app = express();
 
 // Middlewares
 app.use(
-  cors({
-    origin: "http://localhost:3000",
-    credentials: true,
-  })
+  cors()
 );
 app.use(express.json());
 app.use(cookieParser(process.env.COOKIE_SECRET));
